@@ -7,7 +7,7 @@ import { cn } from "@/utils";
 
 export const metadata: Metadata = {
   title: "Friendzone AI",
-  description: "A Next.js starter using Hume AI's Empathic Voice Interface",
+  description: "Empathetic AI Dating Assistant",
 };
 
 export default function RootLayout({
