@@ -13,7 +13,7 @@ export default function ClientComponent({
 }) {
   const timeout = useRef<number | null>(null);
   const ref = useRef<ComponentRef<typeof Messages> | null>(null);
-  
+
   return (
     <div
       className={
@@ -21,6 +21,7 @@ export default function ClientComponent({
       }
     >
       <VoiceProvider
+        configId={process.env.NEXT_PUBLIC_HUME_CONFIG_ID}
         auth={{ type: "accessToken", value: accessToken }}
         onMessage={() => {
           if (timeout.current) {
